@@ -1,6 +1,7 @@
 # Clima-en-tu-pais
 Utilizando fetch con una API, al ingresar el nombre de la ciudad y el país(con validaciones que tienen que pasar) se nos muestra la temperatura actual y la Maxima y minima del día. 
 
+Watch in: https://boring-darwin-5ef182.netlify.app/
 
 ## Imagen 1
 ![Imagen1](https://user-images.githubusercontent.com/64865940/131056875-4b5b5b6a-45de-4779-9e6e-f70a9116b2a6.png)
