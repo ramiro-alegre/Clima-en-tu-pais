@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,900&display=swap');
+$body-color: linear-gradient(90deg,
+rgba(144, 167, 2, 1) 0%,
+rgba(8, 230, 179, 1) 50%,
+rgba(3, 194, 163, 1) 93%);
+$font-family-all: 'Poppins',
+'Arial';
+$font-size-titulo: 40px;
+//--conteiner--//
+$width-conteiner: 500px;
+$height-conteiner: 800px;
+//--resultados--// 
+$font-size-ciudad-temperatura: 30px;
+$font-size-max-min: 15px;
+//--formulario--//
+$width-formulario: 60%;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $font-family-all;
+}
+
+body {
+    background: $body-color;
+    display: flex;
+    justify-content: center;
+}
+
+.conteiner {
+    width: $width-conteiner;
+    height: $height-conteiner;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+    font-size: $font-size-titulo;
+    text-transform: uppercase;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resultado__ciudad,
+.resultado__temperatura {
+    font-size: $font-size-ciudad-temperatura;
+}
+
+.resultado__maxima,
+.resultado__minima {
+    font-size: $font-size-max-min;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: $width-formulario;
+}
+
+.formulario__ciudad,
+.formulario__ddl {
+    padding: 5px 10px;
+    margin: 10px 0px;
+}
+
+.botonObtener {
+    padding: 5px 0px;
+    border: none;
+    background-color: greenyellow;
+    border-radius: 10px;
+}
+
+.botonObtener:hover {
+    cursor: pointer;
+}
+
+.errores {
+    margin-top: 20px;
+    padding: 5px 10px;
+}
+
+.error {
+    border: 1px solid red;
+    background-color: white;
+    color: red;
+}
+
+//Cargador from https://loading.io/css/
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #fff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(24px, 0);
+    }
+}
