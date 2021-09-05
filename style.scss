@@ -7,13 +7,13 @@ $font-family-all: 'Poppins',
 'Arial';
 $font-size-titulo: 40px;
 //--conteiner--//
-$width-conteiner: 500px;
+$width-conteiner: 1000px;
 $height-conteiner: 800px;
 //--resultados--// 
 $font-size-ciudad-temperatura: 30px;
 $font-size-max-min: 15px;
 //--formulario--//
-$width-formulario: 60%;
+$width-formulario: 100%;
 * {
     padding: 0;
     margin: 0;
@@ -59,6 +59,7 @@ body {
 .formulario {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: $width-formulario;
 }
 
@@ -66,13 +67,16 @@ body {
 .formulario__ddl {
     padding: 5px 10px;
     margin: 10px 0px;
+    width: 80%;
 }
 
 .botonObtener {
     padding: 5px 0px;
+    margin: 10px 0px;
     border: none;
     background-color: greenyellow;
     border-radius: 10px;
+    width: 70%;
 }
 
 .botonObtener:hover {
@@ -88,6 +92,18 @@ body {
     border: 1px solid red;
     background-color: white;
     color: red;
+}
+
+.banderas {
+    width: 100%;
+}
+
+.bandera {
+    margin: 5px;
+}
+
+.bandera:hover {
+    cursor: pointer;
 }
 
 //Cargador from https://loading.io/css/

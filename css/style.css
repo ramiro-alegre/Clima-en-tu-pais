@@ -13,7 +13,7 @@ body {
 }
 
 .conteiner {
-  width: 500px;
+  width: 1000px;
   height: 800px;
   display: flex;
   flex-direction: column;
@@ -44,20 +44,24 @@ body {
 .formulario {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  align-items: center;
+  width: 100%;
 }
 
 .formulario__ciudad,
 .formulario__ddl {
   padding: 5px 10px;
   margin: 10px 0px;
+  width: 80%;
 }
 
 .botonObtener {
   padding: 5px 0px;
+  margin: 10px 0px;
   border: none;
   background-color: greenyellow;
   border-radius: 10px;
+  width: 70%;
 }
 
 .botonObtener:hover {
@@ -73,6 +77,18 @@ body {
   border: 1px solid red;
   background-color: white;
   color: red;
+}
+
+.banderas {
+  width: 100%;
+}
+
+.bandera {
+  margin: 5px;
+}
+
+.bandera:hover {
+  cursor: pointer;
 }
 
 .lds-ellipsis {

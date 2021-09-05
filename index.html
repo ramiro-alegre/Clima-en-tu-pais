@@ -11,30 +11,23 @@
 
 <body>
     <div class="conteiner">
-        <h1 class="titulo">Clima en tu País</h1>
+        <h1 class="titulo">Clima en tu Pais</h1>
 
         <div class="resultado">
             <p class="resultado__texto">Debe escribir su ciudad y seleccionar su país</p>
         </div>
-
+        <div class="errores">
+        </div>
         <form class="formulario" id="formulario">
             <input type="text" class="formulario__ciudad" id="ciudad" placeholder="Escriba su ciudad">
-            <select name="Paises" id="pais" class="formulario__ddl">
-                <option value="">--Seleccione--</option>
-                <option value="AR">Argentina</option>
-                <option value="MX">Mexico</option>
-                <option value="ES">España</option>
-                <option value="BO">Bolivia</option>
-                <option value="CL">Chile</option>
-                <option value="CO">Colombia</option>
-            </select>
+            <h2 class="formulario__h2">Seleccione el pais</h2>
+            <div class="banderas">
+            </div>
             <button type="submit" class="botonObtener">Obtener clima</button>
         </form>
-        <div class="errores">
 
-        </div>
     </div>
 </body>
-<script src="script.js"></script>
+<script src="script.js" type="module"></script>
 
 </html>
