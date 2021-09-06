@@ -2,10 +2,14 @@
 const url = 'https://flagcdn.com/es/codes.json';
 
 export const obtenerCodigos = async() => {
+    try {
+        const resultado = await fetch(url);
+        const respuesta = await resultado.json();
+        dibujarBanderas(respuesta);
+    } catch (error) {
+        throw error;
+    }
 
-    const resultado = await fetch(url);
-    const respuesta = await resultado.json();
-    dibujarBanderas(respuesta);
 }
 
 const dibujarBanderas = (codigos) => {
